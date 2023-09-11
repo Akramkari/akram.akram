@@ -1,0 +1,27 @@
+// ==================================================
+// Class &  helpers
+// ==================================================
+
+.animate{
+	transition: 0.3s all linear;
+}
+
+.clear{
+	&:after{
+		content:'';
+		display:block;
+		clear: both;
+	}
+}
+
+.hideDesktop{
+	@media screen and (min-width: 801px){
+		display: none;
+	}
+}
+
+.hideMobile{
+	@media screen and (max-width: 800px){
+		display: none;
+	}
+}

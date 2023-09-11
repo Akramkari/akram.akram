@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Login page</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/moutamadris/ScriptsIntegration/assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/moutamadris/ScriptsIntegration/assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/moutamadris/ScriptsIntegration/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/moutamadris/ScriptsIntegration/assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/moutamadris/ScriptsIntegration/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/moutamadris/ScriptsIntegration/assets/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="/moutamadris/ScriptsIntegration/assets/css/login.css" />
+</head>
+
+<body>
+    <div class="global">
+        <!-- CONTENT -->
+
+        <div class="loginContent">
+            <div class="main">
+                <div class="rightSide ">
+                    <div class="welcome">
+                        <div class="inner">
+                            <h1 class="welcomeTitle">مرحبًا بك في حسابك الخاص</h1>
+                            <p class="welcomeDesc">منظومة معلوماتية متكاملة تمكن من إرساء طرق عمل جديدة للتدبير المدرسي على صعيد المؤسسات التعليمية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftSide">
+                    <div class="inner">
+                        <div class="ministryLogo">
+                            <img src="/moutamadris/ScriptsIntegration/medias/ministry-logo-ar.png" alt="" />
+                        </div>
+                        <form Id="formLogin" action="/moutamadris/Account" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="DlU_gIgO5P8FqbOikyFkOxPAvcE_F2XzCIX4i0daxmoDxdIVjzSbT69T4y2me-Wau0JxooUKID4JgS7nypIx04LrYow1" />
+                            <div class="formLogin">
+                                <div class="massarLogo">
+                                    <img src="/moutamadris/ScriptsIntegration/medias/massar-logo.png" alt="" />
+                                </div>
+                                <div class="formLoginStyle">
+                                    <div class="item">
+                                        <input Title="" class="" data-val="true" data-val-required="المرجوا ادخال اسم المستخدم" id="UserName" name="UserName" placeholder="إسم المستخدم" required="required" type="text" value="" />
+                                        <span style="display:none" id="errorLogin" class="errorLine">المرجوا ادخال اسم المستخدم</span>
+
+                                    </div>
+                                    <div class="item">
+                                        <input Title="" class="" data-val="true" data-val-required="المرجوا ادخال كلمة المرور" id="Password" name="Password" placeholder="كلمة المرور" required="required" type="password" />
+                                        <span style="display:none" id="errorPassword" class="errorLine">المرجوا ادخال كلمة المرور</span>
+
+                                    </div>
+
+
+
+                                    <div class="item">
+                                        <button id="btnSubmit" class="submitBtn submitBtn-large" type="button">تسجيل الدخول </button>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="/moutamadris/MotPassOublieEleve">
+                                                نسيت كلمة المرور؟
+                                            </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="/moutamadris/MotPassOublieEleve">
+                                                التفعيل الأولي للحساب
+                                            </a>
+                                    </div>
+
+                                    <div class="errorZone MsgErr" id="MsgError" style="display:none">
+                                        <p>يرجى ملء الخانات المطلوبة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <nav class="navLang">
+                            <ul>
+                                <li>
+                                    <a class="current" href="/moutamadris/General/SetCulture?culture=ar">
+                                        العربية
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="/moutamadris/General/SetCulture?culture=fr">
+                                        الفرنسية
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/moutamadris/ScriptsIntegration/assets/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/moutamadris/ScriptsIntegration/assets/js/plugin/slick.min.js"></script>
+    <script type="text/javascript" src="/moutamadris/ScriptsIntegration/assets/js/plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/moutamadris/ScriptsIntegration/assets/js/scripts.min.js"></script>
+</body>
+
+</html>
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-80043752-7', 'auto');
+    ga('send', 'pageview');
+
+
+    $(document).ready(function() {
+        window.history.pushState({}, document.title, "/moutamadris/Account");
+
+        var isFormValid = true;
+
+        $("#UserName").change(function() {
+            var username = $("#UserName").val();
+            if ($.trim(username).length == 0) {
+                $("#UserName").css("error");
+                $("#errorLogin").show();
+                $("#MsgError").show();
+                isFormValid = false;
+
+            } else {
+                $("#UserName").removeAttr("class");
+                $("#errorLogin").hide();
+
+            }
+        });
+
+        $("#Password").on('change', function() {
+            var password = $("#Password").val();
+            if ($.trim(password).length == 0) {
+                $("#Password").css("error");
+                $("#errorPassword").show();
+                $("#MsgError").show();
+                isFormValid = false;
+            } else {
+                $("#Password").removeAttr("class");
+                $("#errorPassword").hide();
+
+            }
+        });
+
+        $("#btnSubmit").click(function() {
+            isFormValid = true;
+            $("#UserName").trigger("change");
+            $("#Password").trigger("change");
+            if (isFormValid == true) {
+                $("#MsgError").hide();
+                $(this).closest("form").submit();
+            }
+
+
+
+        });
+    })
+</script>

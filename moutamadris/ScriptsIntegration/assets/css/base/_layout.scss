@@ -1,0 +1,105 @@
+// ==================================================
+// Layout
+// ==================================================
+    
+html{
+	font-size:100px;
+	overflow-x: hidden;
+	&.noScroll{
+		&, body{
+			overflow: hidden;
+		}
+	}
+
+	
+	@media screen and (max-width: 1300px) and (min-width: 801px){
+		font-size: calc(((100vw - 800px)/28) + 82px);
+	}
+
+	@media screen and (max-width: 800px) and (min-width: 601px){
+		font-size: 100px;
+	}
+
+	@media screen and (max-width: 360px) and (min-width: 331px){
+		font-size: calc(((100vw - 330px)/3) + 90px);
+	}
+
+	@media screen and (max-width: 330px){
+		font-size: 90px;
+	}
+
+}
+
+body{
+    font-family: $mainFont;
+	font-weight: 400;
+    font-size: rem(16);
+    background:$bodyColor;
+	color:$mainColor;
+	overflow-x: hidden;
+
+	[dir=rtl] & {
+		font-family: $mainArFont;
+	}
+
+}
+
+.global{
+
+}
+
+.switcherContent{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	min-height: 100vh;
+	padding: rem(88) 0 rem(24);
+
+	@media screen and (max-width: 800px){
+        padding: rem(66) 0 rem(16);
+    }
+}
+
+.choiceContainer{
+	flex-grow: 1;
+
+	.choiceInner{
+		max-width: 1260px;
+		margin: 0 auto;
+		padding: rem(50) rem(30) 0;
+
+		@media screen and (max-width: 800px){
+            padding: rem(38) rem(16) 0;
+        }
+	}
+}
+
+.dashboardContent{
+	display: flex;
+	overflow: hidden;
+
+	&.kidsNav{
+		background: $white;
+	}
+
+	@media screen and (max-width: 800px){
+		display: block;
+	}
+}
+
+.mainContent{
+	flex-grow: 1;
+	padding: rem(26) rem(32);
+	overflow: hidden;
+
+	@media screen and (max-width: 800px){
+		padding: rem(20) rem(16);
+	}
+
+	.openCollabSpace &,
+	.openMenu &{
+		@media screen and (min-width: 801px){
+            filter: blur(1px);
+        }
+    }
+}
